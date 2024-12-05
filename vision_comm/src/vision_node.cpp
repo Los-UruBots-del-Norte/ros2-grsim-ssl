@@ -32,7 +32,7 @@ public:
 
 		GOOGLE_PROTOBUF_VERIFY_VERSION;
 		// Initialize the SSL client
-		int port = use_grsim_vision_ ? 10020 : 10006;
+		int port = 10002;
 		client_ = RoboCupSSLClient(port);
 		client_.open(true);
 		RCLCPP_INFO(this->get_logger(), "Connected to %s", use_grsim_vision_ ? "grSim vision" : "ssl-vision");

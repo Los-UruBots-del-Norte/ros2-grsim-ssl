@@ -5,147 +5,110 @@
 
 #include <algorithm>
 
-#include <google/protobuf/stubs/common.h>
-#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/io/coded_stream.h>
-#include <google/protobuf/wire_format_lite_inl.h>
+#include <google/protobuf/extension_set.h>
+#include <google/protobuf/wire_format_lite.h>
 #include <google/protobuf/descriptor.h>
 #include <google/protobuf/generated_message_reflection.h>
 #include <google/protobuf/reflection_ops.h>
 #include <google/protobuf/wire_format.h>
-// This is a temporary google only hack
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-#include "third_party/protobuf/version.h"
-#endif
 // @@protoc_insertion_point(includes)
-
-namespace protobuf_messages_5frobocup_5fssl_5fdetection_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_5frobocup_5fssl_5fdetection_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_SSL_DetectionFrame;
-}  // namespace protobuf_messages_5frobocup_5fssl_5fdetection_2eproto
-namespace protobuf_messages_5frobocup_5fssl_5frefbox_5flog_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_5frobocup_5fssl_5frefbox_5flog_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_Log_Frame;
-}  // namespace protobuf_messages_5frobocup_5fssl_5frefbox_5flog_2eproto
+#include <google/protobuf/port_def.inc>
+extern PROTOBUF_INTERNAL_EXPORT_messages_5frobocup_5fssl_5frefbox_5flog_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_Log_Frame_messages_5frobocup_5fssl_5frefbox_5flog_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_5frobocup_5fssl_5fdetection_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_SSL_DetectionFrame_messages_5frobocup_5fssl_5fdetection_2eproto;
 class Log_FrameDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<Log_Frame>
-      _instance;
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Log_Frame> _instance;
 } _Log_Frame_default_instance_;
 class Refbox_LogDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<Refbox_Log>
-      _instance;
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Refbox_Log> _instance;
 } _Refbox_Log_default_instance_;
-namespace protobuf_messages_5frobocup_5fssl_5frefbox_5flog_2eproto {
-static void InitDefaultsLog_Frame() {
+static void InitDefaultsscc_info_Log_Frame_messages_5frobocup_5fssl_5frefbox_5flog_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
     void* ptr = &::_Log_Frame_default_instance_;
     new (ptr) ::Log_Frame();
-    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
   ::Log_Frame::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_Log_Frame =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsLog_Frame}, {
-      &protobuf_messages_5frobocup_5fssl_5fdetection_2eproto::scc_info_SSL_DetectionFrame.base,}};
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_Log_Frame_messages_5frobocup_5fssl_5frefbox_5flog_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_Log_Frame_messages_5frobocup_5fssl_5frefbox_5flog_2eproto}, {
+      &scc_info_SSL_DetectionFrame_messages_5frobocup_5fssl_5fdetection_2eproto.base,}};
 
-static void InitDefaultsRefbox_Log() {
+static void InitDefaultsscc_info_Refbox_Log_messages_5frobocup_5fssl_5frefbox_5flog_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
     void* ptr = &::_Refbox_Log_default_instance_;
     new (ptr) ::Refbox_Log();
-    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
   ::Refbox_Log::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_Refbox_Log =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsRefbox_Log}, {
-      &protobuf_messages_5frobocup_5fssl_5frefbox_5flog_2eproto::scc_info_Log_Frame.base,}};
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_Refbox_Log_messages_5frobocup_5fssl_5frefbox_5flog_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_Refbox_Log_messages_5frobocup_5fssl_5frefbox_5flog_2eproto}, {
+      &scc_info_Log_Frame_messages_5frobocup_5fssl_5frefbox_5flog_2eproto.base,}};
 
-void InitDefaults() {
-  ::google::protobuf::internal::InitSCC(&scc_info_Log_Frame.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_Refbox_Log.base);
-}
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_messages_5frobocup_5fssl_5frefbox_5flog_2eproto[2];
+static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_messages_5frobocup_5fssl_5frefbox_5flog_2eproto = nullptr;
+static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_messages_5frobocup_5fssl_5frefbox_5flog_2eproto = nullptr;
 
-::google::protobuf::Metadata file_level_metadata[2];
-
-const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::Log_Frame, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::Log_Frame, _internal_metadata_),
+const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_messages_5frobocup_5fssl_5frefbox_5flog_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  PROTOBUF_FIELD_OFFSET(::Log_Frame, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::Log_Frame, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::Log_Frame, frame_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::Log_Frame, refbox_cmd_),
+  PROTOBUF_FIELD_OFFSET(::Log_Frame, frame_),
+  PROTOBUF_FIELD_OFFSET(::Log_Frame, refbox_cmd_),
   1,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::Refbox_Log, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::Refbox_Log, _internal_metadata_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::Refbox_Log, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::Refbox_Log, log_),
-  ~0u,
+  PROTOBUF_FIELD_OFFSET(::Refbox_Log, log_),
 };
-static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
+static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, 7, sizeof(::Log_Frame)},
-  { 9, 15, sizeof(::Refbox_Log)},
+  { 9, -1, sizeof(::Refbox_Log)},
 };
 
-static ::google::protobuf::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::google::protobuf::Message*>(&::_Log_Frame_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&::_Refbox_Log_default_instance_),
+static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_Log_Frame_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_Refbox_Log_default_instance_),
 };
 
-void protobuf_AssignDescriptors() {
-  AddDescriptors();
-  AssignDescriptors(
-      "messages_robocup_ssl_refbox_log.proto", schemas, file_default_instances, TableStruct::offsets,
-      file_level_metadata, NULL, NULL);
-}
+const char descriptor_table_protodef_messages_5frobocup_5fssl_5frefbox_5flog_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
+  "\n%messages_robocup_ssl_refbox_log.proto\032"
+  "$messages_robocup_ssl_detection.proto\"C\n"
+  "\tLog_Frame\022\"\n\005frame\030\001 \002(\0132\023.SSL_Detectio"
+  "nFrame\022\022\n\nrefbox_cmd\030\002 \002(\t\"%\n\nRefbox_Log"
+  "\022\027\n\003log\030\001 \003(\0132\n.Log_Frame"
+  ;
+static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_messages_5frobocup_5fssl_5frefbox_5flog_2eproto_deps[1] = {
+  &::descriptor_table_messages_5frobocup_5fssl_5fdetection_2eproto,
+};
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_messages_5frobocup_5fssl_5frefbox_5flog_2eproto_sccs[2] = {
+  &scc_info_Log_Frame_messages_5frobocup_5fssl_5frefbox_5flog_2eproto.base,
+  &scc_info_Refbox_Log_messages_5frobocup_5fssl_5frefbox_5flog_2eproto.base,
+};
+static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_messages_5frobocup_5fssl_5frefbox_5flog_2eproto_once;
+const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_messages_5frobocup_5fssl_5frefbox_5flog_2eproto = {
+  false, false, descriptor_table_protodef_messages_5frobocup_5fssl_5frefbox_5flog_2eproto, "messages_robocup_ssl_refbox_log.proto", 185,
+  &descriptor_table_messages_5frobocup_5fssl_5frefbox_5flog_2eproto_once, descriptor_table_messages_5frobocup_5fssl_5frefbox_5flog_2eproto_sccs, descriptor_table_messages_5frobocup_5fssl_5frefbox_5flog_2eproto_deps, 2, 1,
+  schemas, file_default_instances, TableStruct_messages_5frobocup_5fssl_5frefbox_5flog_2eproto::offsets,
+  file_level_metadata_messages_5frobocup_5fssl_5frefbox_5flog_2eproto, 2, file_level_enum_descriptors_messages_5frobocup_5fssl_5frefbox_5flog_2eproto, file_level_service_descriptors_messages_5frobocup_5fssl_5frefbox_5flog_2eproto,
+};
 
-void protobuf_AssignDescriptorsOnce() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, protobuf_AssignDescriptors);
-}
-
-void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
-void protobuf_RegisterTypes(const ::std::string&) {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 2);
-}
-
-void AddDescriptorsImpl() {
-  InitDefaults();
-  static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-      "\n%messages_robocup_ssl_refbox_log.proto\032"
-      "$messages_robocup_ssl_detection.proto\"C\n"
-      "\tLog_Frame\022\"\n\005frame\030\001 \002(\0132\023.SSL_Detectio"
-      "nFrame\022\022\n\nrefbox_cmd\030\002 \002(\t\"%\n\nRefbox_Log"
-      "\022\027\n\003log\030\001 \003(\0132\n.Log_Frame"
-  };
-  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 185);
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
-    "messages_robocup_ssl_refbox_log.proto", &protobuf_RegisterTypes);
-  ::protobuf_messages_5frobocup_5fssl_5fdetection_2eproto::AddDescriptors();
-}
-
-void AddDescriptors() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, AddDescriptorsImpl);
-}
-// Force AddDescriptors() to be called at dynamic initialization time.
-struct StaticDescriptorInitializer {
-  StaticDescriptorInitializer() {
-    AddDescriptors();
-  }
-} static_descriptor_initializer;
-}  // namespace protobuf_messages_5frobocup_5fssl_5frefbox_5flog_2eproto
+// Force running AddDescriptors() at dynamic initialization time.
+static bool dynamic_init_dummy_messages_5frobocup_5fssl_5frefbox_5flog_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_messages_5frobocup_5fssl_5frefbox_5flog_2eproto)), true);
 
 // ===================================================================
 
@@ -153,205 +116,183 @@ void Log_Frame::InitAsDefaultInstance() {
   ::_Log_Frame_default_instance_._instance.get_mutable()->frame_ = const_cast< ::SSL_DetectionFrame*>(
       ::SSL_DetectionFrame::internal_default_instance());
 }
-void Log_Frame::clear_frame() {
-  if (frame_ != NULL) frame_->Clear();
-  clear_has_frame();
-}
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int Log_Frame::kFrameFieldNumber;
-const int Log_Frame::kRefboxCmdFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+class Log_Frame::_Internal {
+ public:
+  using HasBits = decltype(std::declval<Log_Frame>()._has_bits_);
+  static const ::SSL_DetectionFrame& frame(const Log_Frame* msg);
+  static void set_has_frame(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
+  }
+  static void set_has_refbox_cmd(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
+  }
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x00000003) ^ 0x00000003) != 0;
+  }
+};
 
-Log_Frame::Log_Frame()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_5frobocup_5fssl_5frefbox_5flog_2eproto::scc_info_Log_Frame.base);
+const ::SSL_DetectionFrame&
+Log_Frame::_Internal::frame(const Log_Frame* msg) {
+  return *msg->frame_;
+}
+void Log_Frame::clear_frame() {
+  if (frame_ != nullptr) frame_->Clear();
+  _has_bits_[0] &= ~0x00000002u;
+}
+Log_Frame::Log_Frame(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:Log_Frame)
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:Log_Frame)
 }
 Log_Frame::Log_Frame(const Log_Frame& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  refbox_cmd_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.has_refbox_cmd()) {
-    refbox_cmd_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.refbox_cmd_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  refbox_cmd_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (from._internal_has_refbox_cmd()) {
+    refbox_cmd_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_refbox_cmd(),
+      GetArena());
   }
-  if (from.has_frame()) {
+  if (from._internal_has_frame()) {
     frame_ = new ::SSL_DetectionFrame(*from.frame_);
   } else {
-    frame_ = NULL;
+    frame_ = nullptr;
   }
   // @@protoc_insertion_point(copy_constructor:Log_Frame)
 }
 
 void Log_Frame::SharedCtor() {
-  refbox_cmd_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  frame_ = NULL;
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Log_Frame_messages_5frobocup_5fssl_5frefbox_5flog_2eproto.base);
+  refbox_cmd_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  frame_ = nullptr;
 }
 
 Log_Frame::~Log_Frame() {
   // @@protoc_insertion_point(destructor:Log_Frame)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void Log_Frame::SharedDtor() {
-  refbox_cmd_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  GOOGLE_DCHECK(GetArena() == nullptr);
+  refbox_cmd_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete frame_;
 }
 
+void Log_Frame::ArenaDtor(void* object) {
+  Log_Frame* _this = reinterpret_cast< Log_Frame* >(object);
+  (void)_this;
+}
+void Log_Frame::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void Log_Frame::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* Log_Frame::descriptor() {
-  ::protobuf_messages_5frobocup_5fssl_5frefbox_5flog_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_5frobocup_5fssl_5frefbox_5flog_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const Log_Frame& Log_Frame::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_5frobocup_5fssl_5frefbox_5flog_2eproto::scc_info_Log_Frame.base);
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Log_Frame_messages_5frobocup_5fssl_5frefbox_5flog_2eproto.base);
   return *internal_default_instance();
 }
 
 
 void Log_Frame::Clear() {
 // @@protoc_insertion_point(message_clear_start:Log_Frame)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      refbox_cmd_.ClearNonDefaultToEmptyNoArena();
+      refbox_cmd_.ClearNonDefaultToEmpty();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(frame_ != NULL);
+      GOOGLE_DCHECK(frame_ != nullptr);
       frame_->Clear();
     }
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-bool Log_Frame::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:Log_Frame)
-  for (;;) {
-    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+const char* Log_Frame::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
       // required .SSL_DetectionFrame frame = 1;
-      case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
-               input, mutable_frame()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr = ctx->ParseMessage(_internal_mutable_frame(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // required string refbox_cmd = 2;
-      case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
-                input, this->mutable_refbox_cmd()));
-          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-            this->refbox_cmd().data(), static_cast<int>(this->refbox_cmd().length()),
-            ::google::protobuf::internal::WireFormat::PARSE,
-            "Log_Frame.refbox_cmd");
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          auto str = _internal_mutable_refbox_cmd();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          #ifndef NDEBUG
+          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "Log_Frame.refbox_cmd");
+          #endif  // !NDEBUG
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
-        if (tag == 0) {
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
           goto success;
         }
-        DO_(::google::protobuf::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
       }
-    }
-  }
+    }  // switch
+  }  // while
 success:
-  // @@protoc_insertion_point(parse_success:Log_Frame)
-  return true;
+  _has_bits_.Or(has_bits);
+  return ptr;
 failure:
-  // @@protoc_insertion_point(parse_failure:Log_Frame)
-  return false;
-#undef DO_
+  ptr = nullptr;
+  goto success;
+#undef CHK_
 }
 
-void Log_Frame::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:Log_Frame)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  // required .SSL_DetectionFrame frame = 1;
-  if (cached_has_bits & 0x00000002u) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, this->_internal_frame(), output);
-  }
-
-  // required string refbox_cmd = 2;
-  if (cached_has_bits & 0x00000001u) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->refbox_cmd().data(), static_cast<int>(this->refbox_cmd().length()),
-      ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "Log_Frame.refbox_cmd");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
-      2, this->refbox_cmd(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:Log_Frame)
-}
-
-::google::protobuf::uint8* Log_Frame::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+::PROTOBUF_NAMESPACE_ID::uint8* Log_Frame::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:Log_Frame)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
   // required .SSL_DetectionFrame frame = 1;
   if (cached_has_bits & 0x00000002u) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        1, this->_internal_frame(), deterministic, target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        1, _Internal::frame(this), target, stream);
   }
 
   // required string refbox_cmd = 2;
   if (cached_has_bits & 0x00000001u) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->refbox_cmd().data(), static_cast<int>(this->refbox_cmd().length()),
-      ::google::protobuf::internal::WireFormat::SERIALIZE,
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->_internal_refbox_cmd().data(), static_cast<int>(this->_internal_refbox_cmd().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SERIALIZE,
       "Log_Frame.refbox_cmd");
-    target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
-        2, this->refbox_cmd(), target);
+    target = stream->WriteStringMaybeAliased(
+        2, this->_internal_refbox_cmd(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:Log_Frame)
   return target;
@@ -361,17 +302,17 @@ size_t Log_Frame::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:Log_Frame)
   size_t total_size = 0;
 
-  if (has_refbox_cmd()) {
+  if (_internal_has_refbox_cmd()) {
     // required string refbox_cmd = 2;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->refbox_cmd());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_refbox_cmd());
   }
 
-  if (has_frame()) {
+  if (_internal_has_frame()) {
     // required .SSL_DetectionFrame frame = 1;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *frame_);
   }
 
@@ -381,39 +322,42 @@ size_t Log_Frame::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:Log_Frame)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   if (((_has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
     // required string refbox_cmd = 2;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->refbox_cmd());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_refbox_cmd());
 
     // required .SSL_DetectionFrame frame = 1;
     total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *frame_);
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
 }
 
-void Log_Frame::MergeFrom(const ::google::protobuf::Message& from) {
+void Log_Frame::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:Log_Frame)
   GOOGLE_DCHECK_NE(&from, this);
   const Log_Frame* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const Log_Frame>(
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<Log_Frame>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:Log_Frame)
-    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:Log_Frame)
     MergeFrom(*source);
@@ -423,23 +367,22 @@ void Log_Frame::MergeFrom(const ::google::protobuf::Message& from) {
 void Log_Frame::MergeFrom(const Log_Frame& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:Log_Frame)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_refbox_cmd();
-      refbox_cmd_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.refbox_cmd_);
+      _internal_set_refbox_cmd(from._internal_refbox_cmd());
     }
     if (cached_has_bits & 0x00000002u) {
-      mutable_frame()->::SSL_DetectionFrame::MergeFrom(from.frame());
+      _internal_mutable_frame()->::SSL_DetectionFrame::MergeFrom(from._internal_frame());
     }
   }
 }
 
-void Log_Frame::CopyFrom(const ::google::protobuf::Message& from) {
+void Log_Frame::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_copy_from_start:Log_Frame)
   if (&from == this) return;
   Clear();
@@ -454,29 +397,23 @@ void Log_Frame::CopyFrom(const Log_Frame& from) {
 }
 
 bool Log_Frame::IsInitialized() const {
-  if ((_has_bits_[0] & 0x00000003) != 0x00000003) return false;
-  if (has_frame()) {
-    if (!this->frame_->IsInitialized()) return false;
+  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_internal_has_frame()) {
+    if (!frame_->IsInitialized()) return false;
   }
   return true;
 }
 
-void Log_Frame::Swap(Log_Frame* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
 void Log_Frame::InternalSwap(Log_Frame* other) {
   using std::swap;
-  refbox_cmd_.Swap(&other->refbox_cmd_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  swap(frame_, other->frame_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  refbox_cmd_.Swap(&other->refbox_cmd_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  swap(frame_, other->frame_);
 }
 
-::google::protobuf::Metadata Log_Frame::GetMetadata() const {
-  protobuf_messages_5frobocup_5fssl_5frefbox_5flog_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_5frobocup_5fssl_5frefbox_5flog_2eproto::file_level_metadata[kIndexInFileMessages];
+::PROTOBUF_NAMESPACE_ID::Metadata Log_Frame::GetMetadata() const {
+  return GetMetadataStatic();
 }
 
 
@@ -484,144 +421,122 @@ void Log_Frame::InternalSwap(Log_Frame* other) {
 
 void Refbox_Log::InitAsDefaultInstance() {
 }
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int Refbox_Log::kLogFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+class Refbox_Log::_Internal {
+ public:
+};
 
-Refbox_Log::Refbox_Log()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_5frobocup_5fssl_5frefbox_5flog_2eproto::scc_info_Refbox_Log.base);
+Refbox_Log::Refbox_Log(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  log_(arena) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:Refbox_Log)
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:Refbox_Log)
 }
 Refbox_Log::Refbox_Log(const Refbox_Log& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _has_bits_(from._has_bits_),
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
       log_(from.log_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:Refbox_Log)
 }
 
 void Refbox_Log::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Refbox_Log_messages_5frobocup_5fssl_5frefbox_5flog_2eproto.base);
 }
 
 Refbox_Log::~Refbox_Log() {
   // @@protoc_insertion_point(destructor:Refbox_Log)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void Refbox_Log::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
+void Refbox_Log::ArenaDtor(void* object) {
+  Refbox_Log* _this = reinterpret_cast< Refbox_Log* >(object);
+  (void)_this;
+}
+void Refbox_Log::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void Refbox_Log::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* Refbox_Log::descriptor() {
-  ::protobuf_messages_5frobocup_5fssl_5frefbox_5flog_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_5frobocup_5fssl_5frefbox_5flog_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const Refbox_Log& Refbox_Log::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_5frobocup_5fssl_5frefbox_5flog_2eproto::scc_info_Refbox_Log.base);
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Refbox_Log_messages_5frobocup_5fssl_5frefbox_5flog_2eproto.base);
   return *internal_default_instance();
 }
 
 
 void Refbox_Log::Clear() {
 // @@protoc_insertion_point(message_clear_start:Refbox_Log)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   log_.Clear();
-  _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-bool Refbox_Log::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:Refbox_Log)
-  for (;;) {
-    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+const char* Refbox_Log::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
       // repeated .Log_Frame log = 1;
-      case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
-                input, add_log()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_log(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
-        if (tag == 0) {
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
           goto success;
         }
-        DO_(::google::protobuf::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
       }
-    }
-  }
+    }  // switch
+  }  // while
 success:
-  // @@protoc_insertion_point(parse_success:Refbox_Log)
-  return true;
+  return ptr;
 failure:
-  // @@protoc_insertion_point(parse_failure:Refbox_Log)
-  return false;
-#undef DO_
+  ptr = nullptr;
+  goto success;
+#undef CHK_
 }
 
-void Refbox_Log::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:Refbox_Log)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // repeated .Log_Frame log = 1;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->log_size()); i < n; i++) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1,
-      this->log(static_cast<int>(i)),
-      output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:Refbox_Log)
-}
-
-::google::protobuf::uint8* Refbox_Log::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+::PROTOBUF_NAMESPACE_ID::uint8* Refbox_Log::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:Refbox_Log)
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // repeated .Log_Frame log = 1;
   for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->log_size()); i < n; i++) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        1, this->log(static_cast<int>(i)), deterministic, target);
+      n = static_cast<unsigned int>(this->_internal_log_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(1, this->_internal_log(i), target, stream);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:Refbox_Log)
   return target;
@@ -631,36 +546,35 @@ size_t Refbox_Log::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:Refbox_Log)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated .Log_Frame log = 1;
-  {
-    unsigned int count = static_cast<unsigned int>(this->log_size());
-    total_size += 1UL * count;
-    for (unsigned int i = 0; i < count; i++) {
-      total_size +=
-        ::google::protobuf::internal::WireFormatLite::MessageSize(
-          this->log(static_cast<int>(i)));
-    }
+  total_size += 1UL * this->_internal_log_size();
+  for (const auto& msg : this->log_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
 }
 
-void Refbox_Log::MergeFrom(const ::google::protobuf::Message& from) {
+void Refbox_Log::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:Refbox_Log)
   GOOGLE_DCHECK_NE(&from, this);
   const Refbox_Log* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const Refbox_Log>(
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<Refbox_Log>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:Refbox_Log)
-    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:Refbox_Log)
     MergeFrom(*source);
@@ -670,14 +584,14 @@ void Refbox_Log::MergeFrom(const ::google::protobuf::Message& from) {
 void Refbox_Log::MergeFrom(const Refbox_Log& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:Refbox_Log)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   log_.MergeFrom(from.log_);
 }
 
-void Refbox_Log::CopyFrom(const ::google::protobuf::Message& from) {
+void Refbox_Log::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 // @@protoc_insertion_point(generalized_copy_from_start:Refbox_Log)
   if (&from == this) return;
   Clear();
@@ -692,37 +606,30 @@ void Refbox_Log::CopyFrom(const Refbox_Log& from) {
 }
 
 bool Refbox_Log::IsInitialized() const {
-  if (!::google::protobuf::internal::AllAreInitialized(this->log())) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(log_)) return false;
   return true;
 }
 
-void Refbox_Log::Swap(Refbox_Log* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
 void Refbox_Log::InternalSwap(Refbox_Log* other) {
   using std::swap;
-  CastToBase(&log_)->InternalSwap(CastToBase(&other->log_));
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  log_.InternalSwap(&other->log_);
 }
 
-::google::protobuf::Metadata Refbox_Log::GetMetadata() const {
-  protobuf_messages_5frobocup_5fssl_5frefbox_5flog_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_5frobocup_5fssl_5frefbox_5flog_2eproto::file_level_metadata[kIndexInFileMessages];
+::PROTOBUF_NAMESPACE_ID::Metadata Refbox_Log::GetMetadata() const {
+  return GetMetadataStatic();
 }
 
 
 // @@protoc_insertion_point(namespace_scope)
-namespace google {
-namespace protobuf {
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::Log_Frame* Arena::CreateMaybeMessage< ::Log_Frame >(Arena* arena) {
-  return Arena::CreateInternal< ::Log_Frame >(arena);
+PROTOBUF_NAMESPACE_OPEN
+template<> PROTOBUF_NOINLINE ::Log_Frame* Arena::CreateMaybeMessage< ::Log_Frame >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::Log_Frame >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::Refbox_Log* Arena::CreateMaybeMessage< ::Refbox_Log >(Arena* arena) {
-  return Arena::CreateInternal< ::Refbox_Log >(arena);
+template<> PROTOBUF_NOINLINE ::Refbox_Log* Arena::CreateMaybeMessage< ::Refbox_Log >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::Refbox_Log >(arena);
 }
-}  // namespace protobuf
-}  // namespace google
+PROTOBUF_NAMESPACE_CLOSE
 
 // @@protoc_insertion_point(global_scope)
+#include <google/protobuf/port_undef.inc>

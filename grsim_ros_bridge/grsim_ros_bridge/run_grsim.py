@@ -2,7 +2,7 @@
 import os
 
 #TODO: Change the path to the grSim executable
-GR_SIM_PATH =  "/home/ubuntu/ros_ws/src/grSim/bin/grSim"
+GR_SIM_PATH =  "/home/ricardo/pporto_ws/src/ros2-grsim-ssl/grSim/bin/grSim"
 
 def main(args = None):
     os.system(GR_SIM_PATH)

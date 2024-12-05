@@ -27,7 +27,7 @@ RoboCupSSLClient::RoboCupSSLClient(int port,
   _port=port;
   _net_address=net_address;
   _net_interface=net_interface;
-  in_buffer=new char[65536];
+  in_buffer=new char[131072];
 }
 
 

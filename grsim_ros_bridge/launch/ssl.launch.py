@@ -28,5 +28,5 @@ def generate_launch_description():
     ld.add_action(grsim_node)
     ld.add_action(vision_node)
     ld.add_action(grsim_bridge_node)
-    ld.add_action(test_ssl_node)
+    #ld.add_action(test_ssl_node)
     return ld
